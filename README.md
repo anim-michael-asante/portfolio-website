@@ -19,6 +19,13 @@ The current experience is centered around a single, high-impact hero section:
 - FAQ navigation entry
 - Animated tools marquee featuring Python, Django, Railway, Kali Linux,
   Burp Suite, and Metasploit
+- Warm editorial services section with a soft amber glow, deadline-led heading,
+  and scrollable service cards covering consultation, design, development, web
+  apps, redesigns, launches, and optimization
+- Lightweight local SVG illustrations fill the service-card whitespace without
+  adding remote image requests or layout shift
+- Dedicated dark Security & AppSec services section for application reviews,
+  penetration testing, secure development guidance, and hardening
 - Contact modal with client-side validation and feedback
 - Staggered hero entrance animation with reduced-motion support
 
