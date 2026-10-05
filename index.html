@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Asante Anim | Full-stack engineer & AppSec</title>
+    <meta
+      name="description"
+      content="Portfolio of Anim Michael Asante, a full-stack engineer and application security specialist helping ambitious teams build software that lasts."
+    />
+    <meta name="author" content="Anim Michael Asante" />
+
+    <!-- Favicon assets -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="apple-touch-icon.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Anim Michael Asante — Full-stack engineer & AppSec specialist"
+    />
+    <meta
+      property="og:description"
+      content="Full-stack engineering and application security for ambitious teams that need clarity, momentum, and software that lasts."
+    />
+
+    <!-- Google Fonts: Space Grotesk for display, Manrope for supporting copy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Header / Navigation (Matching Reference Image) -->
+    <header class="site-header" id="siteHeader">
+      <div class="nav-container">
+        <!-- Left: Circular Silhouette / Monogram Avatar Badge -->
+        <a
+          href="#hero"
+          class="brand-avatar-badge"
+          aria-label="Anim Michael Asante Home"
+        >
+          <img
+            class="brand-logo"
+            src="logo.jpeg"
+            alt="Aerixis — Full Stack Developer, AppSec"
+          />
+        </a>
+
+        <!-- Center: Clean Navigation Menu (Home with Active Indicator) -->
+        <nav class="center-nav" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#hero" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#work" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="#faq" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Right: Action Button (No Dark Theme Toggle) -->
+        <div class="header-actions">
+          <button
+            type="button"
+            class="btn btn-pill-dark open-contact-btn"
+            id="headerContactBtn"
+          >
+            Let's talk
+          </button>
+          <button
+            type="button"
+            class="mobile-toggle"
+            id="mobileMenuToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" id="hamburgerIcon"></i>
+            <i data-lucide="x" id="closeMenuIcon" class="hidden"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+          <ul class="mobile-nav-list">
+            <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#work" class="mobile-nav-link">Work</a></li>
+            <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-drawer-footer">
+          <button
+            type="button"
+            class="btn btn-pill-dark w-full open-contact-btn"
+          >
+            Let's talk
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main id="mainContent">
+      <!-- Hero Section (Dedicated Focused View) -->
+      <section class="hero-section" id="hero">
+        <!-- High-Visibility Layered Geometric Translucent Panels Backdrop -->
+        <div class="hero-bg-container" aria-hidden="true" id="heroBgContainer">
+          <!-- Vivid Ambient Gradients (Warm Amber on left, Radiant Azure/Lilac on right) -->
+          <div class="hero-ambient-glow glow-warm"></div>
+          <div class="hero-ambient-glow glow-cool"></div>
+          <div class="hero-ambient-glow glow-center"></div>
+
+          <!-- Distinct 3D Translucent Angled Panels Grid -->
+          <div class="angled-panels-grid">
+            <div class="panel-column col-1">
+              <div class="glass-plate plate-warm plate-1"></div>
+              <div class="glass-plate plate-warm plate-2"></div>
+              <div class="glass-plate plate-warm plate-3"></div>
+            </div>
+            <div class="panel-column col-2">
+              <div class="glass-plate plate-warm-blend plate-4"></div>
+              <div class="glass-plate plate-warm-blend plate-5"></div>
+              <div class="glass-plate plate-warm-blend plate-6"></div>
+            </div>
+            <div class="panel-column col-3">
+              <div class="glass-plate plate-neutral plate-7"></div>
+              <div class="glass-plate plate-neutral plate-8"></div>
+              <div class="glass-plate plate-neutral plate-9"></div>
+            </div>
+            <div class="panel-column col-4">
+              <div class="glass-plate plate-cool-blend plate-10"></div>
+              <div class="glass-plate plate-cool-blend plate-11"></div>
+              <div class="glass-plate plate-cool-blend plate-12"></div>
+            </div>
+            <div class="panel-column col-5">
+              <div class="glass-plate plate-cool plate-13"></div>
+              <div class="glass-plate plate-cool plate-14"></div>
+              <div class="glass-plate plate-cool plate-15"></div>
+            </div>
+            <div class="panel-column col-6">
+              <div class="glass-plate plate-cool-vivid plate-16"></div>
+              <div class="glass-plate plate-cool-vivid plate-17"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <p class="hero-greeting">Hey, I'm Michael</p>
+            <h1 class="hero-headline">
+              <span>Full-stack developer</span>
+              <span class="hero-headline-accent">freelancer &amp; AppSec specialist.</span>
+            </h1>
+            <p class="hero-subheadline">
+              I help ambitious teams and Startups design, secure and ship clear, resilient web
+              applications that are built to last.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact Modal ("Let's talk" Action) -->
+    <div
+      class="modal-overlay"
+      id="contactModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-title-group">
+            <h3 class="modal-title" id="modalTitle">Let's talk</h3>
+            <p class="modal-subtitle">
+              Tell me about your project, timeline, and goals.
+            </p>
+          </div>
+          <button
+            type="button"
+            class="modal-close-btn"
+            id="closeModalBtn"
+            aria-label="Close modal"
+          >
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="userName" class="form-label"
+                >Your Name <span class="required-mark">*</span></label
+              >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  id="userName"
+                  name="name"
+                  class="form-input"
+                  placeholder="e.g. Sarah Jenkins"
+                  required
+                  minlength="2"
+                  maxlength="80"
+                  autocomplete="name"
+                />
+              </div>
+              <span class="field-error" id="nameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="userEmail" class="form-label"
+                >Email Address <span class="required-mark">*</span></label
+              >
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  id="userEmail"
+                  name="email"
+                  class="form-input"
+                  placeholder="sarah@company.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+              <span class="field-error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="projectType" class="form-label">Project Type</label>
+              <div class="input-wrapper">
+                <select id="projectType" name="projectType" class="form-select">
+                  <option value="fullstack">Full-Stack Web Application</option>
+                  <option value="cloud">Cloud Architecture & DevOps</option>
+                  <option value="delivery">
+                    Sprint Delivery & Capacity Scaling
+                  </option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="userMessage" class="form-label"
+                >Project Details <span class="required-mark">*</span></label
+              >
+              <div class="input-wrapper">
+                <textarea
+                  id="userMessage"
+                  name="message"
+                  class="form-textarea"
+                  rows="4"
+                  placeholder="Briefly describe what you're looking to build, your timeline, or any delivery blockers..."
+                  required
+                  minlength="10"
+                  maxlength="2000"
+                ></textarea>
+              </div>
+              <span class="field-error" id="messageError" role="alert"></span>
+            </div>
+
+            <div class="form-footer">
+              <button
+                type="submit"
+                class="btn btn-pill-dark w-full submit-btn"
+                id="submitFormBtn"
+              >
+                <span class="btn-text">Send Inquiry</span>
+                <span class="btn-spinner hidden" aria-hidden="true">
+                  <i data-lucide="loader-2" class="spin-icon"></i>
+                </span>
+              </button>
+              <p class="form-privacy-note">
+                <i data-lucide="lock" class="lock-icon"></i> Confidential &
+                secure. No spam ever.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Global Toast Notification Container -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+  </body>
+</html>
