@@ -1,9 +1,9 @@
 # Aerixis Portfolio
 
 A focused portfolio landing page for **Michael Asante Anim**, a full-stack
-developer and application security specialist. The site is built with plain
-HTML, CSS, and JavaScript so it can be deployed directly to GitHub Pages with
-no build step or framework.
+developer and web application security specialist. The site is built with
+plain HTML, CSS, and JavaScript so it can be deployed directly to GitHub Pages
+with no build step or framework.
 
 ![Aerixis portfolio hero section](./Hero-Section.png)
 
@@ -17,8 +17,8 @@ The current experience is centered around a single, high-impact hero section:
 - Aerixis brand logo in the navigation header
 - Desktop and mobile navigation
 - FAQ navigation entry
-- Animated tools marquee featuring Python, Django, Railway, Kali Linux,
-  Burp Suite, and Metasploit
+- Animated tools marquee featuring development, design, deployment, Linux, and
+  application security tools
 - Warm editorial services section with a soft amber glow, deadline-led heading,
   and scrollable service cards covering consultation, design, development, web
   apps, redesigns, launches, and optimization
@@ -26,12 +26,15 @@ The current experience is centered around a single, high-impact hero section:
   adding remote image requests or layout shift
 - Dedicated dark Security & AppSec services section for application reviews,
   penetration testing, secure development guidance, and hardening
+- Branded `404.html` fallback page for GitHub Pages with the same geometric
+  hero background and a clear route back home
 - Contact modal with client-side validation and feedback
 - Staggered hero entrance animation with reduced-motion support
 
-The visual background is intentionally static. The hero foreground uses
-typography, spacing, contrast, and restrained blue accents to stay readable
-over the layered panels.
+The geometric hero background is intentionally preserved across the landing
+page and 404 experience. Foreground content uses typography, spacing, contrast,
+and restrained navy and orange accents to stay readable over the layered
+panels.
 
 ## Tech Stack
 
@@ -47,12 +50,14 @@ over the layered panels.
 ## Project Structure
 
 ```text
-├── index.html                 # Page structure, SEO metadata, navigation, hero, and contact modal
+├── index.html                 # Page structure, SEO metadata, navigation, sections, and contact modal
+├── 404.html                   # Branded GitHub Pages not-found fallback
 ├── styles.css                 # Design tokens, responsive layout, hero background, and component styles
 ├── app.js                     # Navigation, mobile drawer, modal, toast, and form validation behavior
 ├── logo.jpeg                  # Aerixis header logo
 ├── Hero-Section.png           # README preview image
 ├── Tools/                     # Technology and security tool logos
+├── assets/services/            # Lightweight local SVG service illustrations
 ├── favicon.ico                # Browser favicon
 ├── favicon-16x16.png          # Small PNG favicon
 ├── favicon-32x32.png          # Standard PNG favicon
@@ -70,12 +75,12 @@ The hero introduces the current positioning:
 > Hey, I'm Michael
 >
 > Full-stack developer  
-> freelancer & AppSec specialist.
+> freelancer & Web Application Security.
 
 Supporting copy:
 
-> I help ambitious teams design and ship clear, resilient web applications
-> that are built to last.
+> I help ambitious teams and Startups design, secure and ship clear, resilient
+> web applications that are built to last.
 
 The hero background layers are kept separate from the foreground content so
 the typography and messaging can evolve without changing the visual backdrop.
