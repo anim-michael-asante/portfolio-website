@@ -1,81 +1,116 @@
-# Anim Michael Asante — Portfolio Website
+# Aerixis Portfolio
 
-A modern, high-performance portfolio website built with pure Vanilla HTML5, CSS3, and JavaScript, designed to be hosted directly on **GitHub Pages**.
+A focused portfolio landing page for **Michael Asante Anim**, a full-stack
+developer and application security specialist. The site is built with plain
+HTML, CSS, and JavaScript so it can be deployed directly to GitHub Pages with
+no build step or framework.
 
-![Portfolio Preview Banner](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80)
+![Aerixis portfolio hero section](./Hero-Section.png)
 
-## Design Philosophy & Aesthetics
+## Overview
 
-- **Reference Architecture**: Strict reproduction of the high-end software agency aesthetic — featuring layered 3D isometric translucent glass plates, warm-to-cool radial ambient glows, and clean geometric typography.
-- **Pure Vanilla Stack**: Zero bloated frameworks, zero Tailwind dependencies. Written in clean, standards-compliant HTML5, CSS3 with HSL custom properties, and ES6+ JavaScript.
-- **Accessibility & UX**: WCAG AA color contrast ratios (min 4.5:1), fluid `clamp()` responsive typography, 8-state interactive component mapping, and full keyboard navigation.
-- **Zero Emojis**: 100% powered by official [Lucide Icons](https://lucide.dev).
+The current experience is centered around a single, high-impact hero section:
 
----
+- A warm-to-cool geometric glass-panel background
+- Centered introduction and professional positioning
+- Responsive typography using Space Grotesk and Manrope
+- Aerixis brand logo in the navigation header
+- Desktop and mobile navigation
+- FAQ navigation entry
+- Contact modal with client-side validation and feedback
+- Staggered hero entrance animation with reduced-motion support
 
-## File Structure
+The visual background is intentionally static. The hero foreground uses
+typography, spacing, contrast, and restrained blue accents to stay readable
+over the layered panels.
 
+## Tech Stack
+
+- HTML5
+- CSS3 with custom properties, responsive `clamp()` sizing, and keyframe
+  animation
+- Vanilla ES6+ JavaScript
+- [Lucide Icons](https://lucide.dev)
+- Google Fonts:
+  - [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
+  - [Manrope](https://fonts.google.com/specimen/Manrope)
+
+## Project Structure
+
+```text
+├── index.html                 # Page structure, SEO metadata, navigation, hero, and contact modal
+├── styles.css                 # Design tokens, responsive layout, hero background, and component styles
+├── app.js                     # Navigation, mobile drawer, modal, toast, and form validation behavior
+├── logo.jpeg                  # Aerixis header logo
+├── Hero-Section.png           # README preview image
+├── favicon.ico                # Browser favicon
+├── favicon-16x16.png          # Small PNG favicon
+├── favicon-32x32.png          # Standard PNG favicon
+├── apple-touch-icon.png       # Apple home-screen icon
+├── android-chrome-192x192.png # Android/PWA icon
+├── android-chrome-512x512.png # Android/PWA icon
+├── site.webmanifest           # Web app metadata
+└── documentation.md           # Design and implementation notes
 ```
-├── index.html         # Semantic structure, accessible markup & SEO metadata
-├── styles.css         # Modern HSL design tokens, 3D angled panels & animations
-├── app.js             # Mobile drawer, modals, OWASP sanitized form & filter tabs
-├── documentation.md   # Architectural decisions, component map & security audit
-└── README.md          # Project overview & deployment guide
-```
 
----
+## Hero Content
 
-## Key Features
+The hero introduces the current positioning:
 
-1. **Reference Hero Section**:
-   - Translucent angled glass panels cascade with subtle ambient mouse parallax.
-   - High-contrast display headline: *"Build with confidence and deliver on time"*.
-   - Sub-hero metric banner with delivery highlights and Clutch 4.8/5 social proof.
-2. **Case Studies & Production Implementations**:
-   - Filterable project gallery (Full-Stack, Cloud & Systems, Enterprise).
-   - Interactive deep-dive modal detailing metrics, architecture, and technology stacks.
-3. **End-to-End Capabilities & Expertise**:
-   - Full-stack development, cloud orchestration, OWASP Top 10 security audits, and system performance.
-   - Interactive competency tabs for Frontend, Backend, Cloud/DevOps, and Security.
-4. **Predictable 5-Stage Delivery Process**:
-   - Discovery, Architectural Review, Iterative Build, Automated Audits, and Zero-Downtime Rollouts.
-5. **Interactive Contact Modal**:
-   - Complete 8-state handling (Default, Hover, Active, Focus, Loading spinner, Error, Empty, Disabled).
-   - OWASP A03/A04 client-side input sanitization.
-   - Animated toast confirmation system.
+> Hey, I'm Michael
+>
+> Full-stack developer  
+> freelancer & AppSec specialist.
 
----
+Supporting copy:
 
-## GitHub Pages Deployment Instructions
+> I help ambitious teams design and ship clear, resilient web applications
+> that are built to last.
 
-This repository is pre-configured for instant zero-build deployment on GitHub Pages:
+The hero background layers are kept separate from the foreground content so
+the typography and messaging can evolve without changing the visual backdrop.
 
-1. Push your changes to the `main` branch:
-   ```bash
-   git add .
-   git commit -m "feat: complete portfolio implementation"
-   git push origin main
-   ```
-2. Navigate to your repository on GitHub:
-   - Go to **Settings** > **Pages**.
-   - Under **Build and deployment**, select **Deploy from a branch**.
-   - Choose `main` as the source branch and `/ (root)` as the folder.
-   - Click **Save**.
-3. Your portfolio will be live at:
-   `https://anim-michael-asante.github.io/portfolio-website/`
+## Accessibility and UX
 
----
+- Semantic landmarks and heading hierarchy
+- Descriptive logo alternative text
+- Keyboard-visible focus states
+- Mobile navigation with `aria-expanded` and `aria-hidden` state updates
+- Contact dialog with labelled form controls and inline validation messages
+- Visible loading and success feedback for contact submission
+- Reduced-motion override for users who prefer less animation
+- Touch-friendly controls with responsive layouts
 
 ## Local Development
 
-To run locally without installing any dependencies:
+No dependencies are required. Serve the repository from its root so relative
+asset paths work correctly:
 
 ```bash
-# Using Python:
 python -m http.server 8080
+```
 
-# Or using Node:
+Then open [http://localhost:8080](http://localhost:8080).
+
+You can also use any static file server, for example:
+
+```bash
 npx serve .
 ```
 
-Open [http://localhost:8080](http://localhost:8080) in your web browser.
+## Deployment
+
+This is a static site and can be deployed through GitHub Pages:
+
+1. Push the repository to GitHub.
+2. Open **Settings → Pages**.
+3. Select **Deploy from a branch**.
+4. Choose the `main` branch and the `/ (root)` folder.
+5. Save the configuration and open the generated Pages URL.
+
+## Notes
+
+- The contact form currently simulates submission in the browser; it does not
+  send data to a backend service.
+- Relative asset paths are used so the site works from a repository subpath,
+  including a GitHub Pages project site.
