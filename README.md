@@ -17,6 +17,8 @@ The current experience is centered around a single, high-impact hero section:
 - Aerixis brand logo in the navigation header
 - Desktop and mobile navigation
 - FAQ navigation entry
+- Animated tools marquee featuring Python, Django, Railway, Kali Linux,
+  Burp Suite, and Metasploit
 - Contact modal with client-side validation and feedback
 - Staggered hero entrance animation with reduced-motion support
 
@@ -43,6 +45,7 @@ over the layered panels.
 ├── app.js                     # Navigation, mobile drawer, modal, toast, and form validation behavior
 ├── logo.jpeg                  # Aerixis header logo
 ├── Hero-Section.png           # README preview image
+├── Tools/                     # Technology and security tool logos
 ├── favicon.ico                # Browser favicon
 ├── favicon-16x16.png          # Small PNG favicon
 ├── favicon-32x32.png          # Standard PNG favicon

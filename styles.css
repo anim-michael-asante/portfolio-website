@@ -737,6 +737,108 @@ ul {
   animation: heroItemIn 800ms 300ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+.tools-marquee {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding: var(--space-xl) 0;
+  background: hsl(222, 47%, 11%);
+  color: hsl(0, 0%, 100%);
+}
+
+.tools-marquee-header {
+  width: min(100% - 32px, var(--container-max-width));
+  margin: 0 auto var(--space-lg);
+  text-align: center;
+}
+
+.tools-kicker {
+  margin-bottom: var(--space-xs);
+  color: hsl(213, 85%, 68%);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.tools-marquee-header h2 {
+  color: hsl(0, 0%, 100%);
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.03em;
+}
+
+.tools-marquee-viewport {
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.tools-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: toolsMarquee 28s linear infinite;
+}
+
+.tools-marquee-list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+.tool-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 170px;
+  height: 72px;
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.08);
+  color: hsl(0, 0%, 96%);
+  white-space: nowrap;
+}
+
+.tool-item img {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border-radius: var(--radius-sm);
+  background: hsl(0, 0%, 100%);
+  object-fit: contain;
+}
+
+.tool-item span {
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+.tools-marquee-track:hover,
+.tools-marquee-track:focus-within {
+  animation-play-state: paused;
+}
+
+@keyframes toolsMarquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .hero-cta-group {
   display: flex;
   align-items: center;
