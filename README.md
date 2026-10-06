@@ -9,6 +9,25 @@ This is a framework-free static website built with HTML, CSS, and vanilla
 JavaScript. It can be deployed directly to GitHub Pages without a build step,
 server, database, or runtime dependency.
 
+## Table of contents
+
+- [Hero Section](#hero-section)
+- [Responsive mockups](#responsive-mockups)
+- [Live site](#live-site)
+- [Pages](#pages)
+- [Featured work](#featured-work)
+- [Tech stack](#tech-stack)
+- [Site features](#site-features)
+- [Google Analytics](#google-analytics)
+- [Google Tag Manager](#google-tag-manager)
+- [SEO and crawler files](#seo-and-crawler-files)
+- [Project structure](#project-structure)
+- [Local development](#local-development)
+- [Deployment](#deployment)
+- [Validation checklist](#validation-checklist)
+- [Contact](#contact)
+- [Known limitations](#known-limitations)
+
 ## Hero Section
 
 ![Anim Michael Asante portfolio hero section](./Hero-Section.png)
@@ -31,6 +50,43 @@ The hero section combines:
 The visual system uses a light cream canvas, navy text and surfaces, soft blue
 gradients, and warm amber accents. Motion is limited to purposeful entrance
 and interaction states, with reduced-motion support for accessibility.
+
+## Responsive mockups
+
+The portfolio is designed to adapt across desktop, tablet, and mobile
+breakpoints. Use the controls below as a carousel-style gallery of the
+responsive layouts.
+
+<details open>
+<summary><strong>Slide 1 · Desktop view</strong></summary>
+
+<p align="center">
+  <img src="./Mockups/Desktop%20View.png" alt="Portfolio desktop layout mockup" width="900">
+</p>
+
+</details>
+
+<details>
+<summary><strong>Slide 2 · Tablet view</strong></summary>
+
+<p align="center">
+  <img src="./Mockups/Tablet%20view.png" alt="Portfolio tablet layout mockup" width="700">
+</p>
+
+</details>
+
+<details>
+<summary><strong>Slide 3 · Mobile view</strong></summary>
+
+<p align="center">
+  <img src="./Mockups/Mobile%20view.png" alt="Portfolio mobile layout mockup" width="420">
+</p>
+
+</details>
+
+> GitHub README files do not run custom JavaScript, so the gallery uses native
+> expandable slides instead of an auto-playing carousel. This keeps the images
+> accessible and works without external dependencies.
 
 ## Live site
 
@@ -188,6 +244,7 @@ https://anim-michael-asante.github.io/portfolio-website/sitemap.xml
 ├── faq.js                     # FAQ page navigation behavior
 ├── contact.js                 # Contact page navigation behavior
 ├── Projects/                  # Featured project images
+├── Mockups/                   # Desktop, tablet, and mobile layout previews
 ├── Tools/                     # Technology and security tool images
 ├── assets/services/           # Local SVG service illustrations
 ├── logo.jpeg                  # Site branding image
