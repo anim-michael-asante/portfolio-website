@@ -121,6 +121,34 @@ To confirm tracking, open the live site and check **Reports → Realtime** in
 Google Analytics. The tag is loaded directly from Google Tag Manager's
 `gtag.js` endpoint and does not require a build step.
 
+## Google Tag Manager
+
+Google Tag Manager is installed on every HTML page using container
+`GTM-5TWV46VL`:
+
+- `index.html`
+- `About.html`
+- `Work.html`
+- `FAQ.html`
+- `Contact.html`
+- `404.html`
+
+Each page includes both required GTM snippets:
+
+- The asynchronous GTM loader at the top of `<head>`
+- The noscript iframe immediately after the opening `<body>` tag
+
+To verify the installation, open the live project site in Google Tag
+Assistant or GTM Preview mode:
+
+```text
+https://anim-michael-asante.github.io/portfolio-website/
+```
+
+If GA4 is later configured as a tag inside GTM, remove the direct GA4
+`gtag.js` snippets from the HTML pages first. Running both implementations
+would send duplicate page views and events.
+
 ## SEO and crawler files
 
 The repository includes the files needed for static-site discovery and
@@ -238,5 +266,7 @@ Then verify:
   network connection unless they are later self-hosted.
 - Analytics depends on the Google tag loading successfully and may be affected
   by browser privacy settings or content blockers.
+- Google Tag Manager depends on the GTM container being published. Preview
+  mode can verify the snippets before publishing container changes.
 - GitHub Pages serves the site as static files; dynamic form handling would
   require a separate trusted service or backend.
