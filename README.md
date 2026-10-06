@@ -98,6 +98,29 @@ and interaction states, with reduced-motion support for accessibility.
 - Deferred JavaScript loading
 - Pinned external icon library URL for more predictable caching
 
+## Google Analytics
+
+Google Analytics is installed on every HTML page using the Google tag with
+measurement ID `G-KHM4VHE66D`:
+
+- `index.html`
+- `About.html`
+- `Work.html`
+- `FAQ.html`
+- `Contact.html`
+- `404.html`
+
+The site is a GitHub Pages project site, so the configured website URL must
+include the repository path:
+
+```text
+https://anim-michael-asante.github.io/portfolio-website/
+```
+
+To confirm tracking, open the live site and check **Reports → Realtime** in
+Google Analytics. The tag is loaded directly from Google Tag Manager's
+`gtag.js` endpoint and does not require a build step.
+
 ## SEO and crawler files
 
 The repository includes the files needed for static-site discovery and
@@ -213,5 +236,7 @@ Then verify:
   simulated feedback. It does not send submissions to a backend.
 - The site uses Google Fonts and the Lucide CDN, so those resources require a
   network connection unless they are later self-hosted.
+- Analytics depends on the Google tag loading successfully and may be affected
+  by browser privacy settings or content blockers.
 - GitHub Pages serves the site as static files; dynamic form handling would
   require a separate trusted service or backend.
