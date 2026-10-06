@@ -1,150 +1,194 @@
-# Aerixis Portfolio
+# Anim Michael Asante Portfolio
 
-A focused portfolio landing page for **Michael Asante Anim**, a full-stack
-developer and web application security specialist. The site is built with
-plain HTML, CSS, and JavaScript so it can be deployed directly to GitHub Pages
-with no build step or framework.
+The personal portfolio of **Anim Michael Asante**, a full-stack engineer and
+application security specialist. The site presents selected work, explains the
+development and security approach behind it, and provides direct contact
+routes for collaboration.
 
-![Aerixis portfolio hero section](./Hero-Section.png)
+This is a framework-free static website built with HTML, CSS, and vanilla
+JavaScript. It can be deployed directly to GitHub Pages without a build step,
+server, database, or runtime dependency.
 
-## Overview
+## Live site
 
-The current experience is centered around a single, high-impact hero section:
+<https://anim-michael-asante.github.io/portfolio-website/>
 
-- A warm-to-cool geometric glass-panel background
-- Centered introduction and professional positioning
-- Responsive typography using Space Grotesk and Manrope
-- Aerixis brand logo in the navigation header
-- Desktop and mobile navigation
-- FAQ navigation entry
-- Animated tools marquee featuring development, design, deployment, Linux, and
-  application security tools
-- Warm editorial services section with a soft amber glow, deadline-led heading,
-  and scrollable service cards covering consultation, design, development, web
-  apps, redesigns, launches, and optimization
-- Lightweight local SVG illustrations fill the service-card whitespace without
-  adding remote image requests or layout shift
-- Dedicated dark Security & AppSec services section for application reviews,
-  penetration testing, secure development guidance, and hardening
-- Branded `404.html` fallback page for GitHub Pages with the same geometric
-  hero background and a clear route back home
-- Dedicated `About.html` page with a focused editorial introduction to the
-  full-stack and application security practice
-- Minimal editorial About layout with a clean white canvas, oversized
-  typography, restrained blue accents, and a simple build-and-audit statement
-- About-page staggered entrance animations with reduced-motion support
-- Open Graph and Twitter/X metadata with the hosted Aerixis logo for rich link
-  previews when the portfolio URL is shared
-- Contact modal with client-side validation and feedback
-- Staggered hero entrance animation with reduced-motion support
+## Pages
 
-The geometric hero background is intentionally preserved across the landing
-page and 404 experience. Foreground content uses typography, spacing, contrast,
-and restrained navy and orange accents to stay readable over the layered
-panels.
+| Page | Purpose |
+| --- | --- |
+| `index.html` | Homepage with positioning, services, tools, security focus, and navigation |
+| `About.html` | Background, working approach, timeline, and application security perspective |
+| `Work.html` | Selected projects with descriptions, images, and GitHub repository links |
+| `FAQ.html` | Answers about services, collaboration, timelines, and existing codebases |
+| `Contact.html` | CTA-style contact page with email, LinkedIn, GitHub, and WhatsApp |
+| `404.html` | Branded GitHub Pages not-found page |
 
-## Tech Stack
+## Featured work
 
-- HTML5
-- CSS3 with custom properties, responsive `clamp()` sizing, and keyframe
-  animation
+- **PortSwigger Write-ups**
+  A structured collection of Web Security Academy lab write-ups covering
+  vulnerabilities, exploitation techniques, remediation, and testing
+  methodology.
+  <https://github.com/anim-michael-asante/portswigger-web-security-writeups>
+
+- **PaperlessEdu**
+  A secure Django and PWA school management system for digitized attendance,
+  report cards, fee receipts, and auditable workflows.
+  <https://github.com/anim-michael-asante/PaperlessEdu>
+
+- **SecureVault**
+  A Django file portal using AES-256 encryption and department/role-based
+  access controls.
+  <https://github.com/anim-michael-asante/SecureVault-Role-Based-Encrypted-File-Portal>
+
+- **Aerixis ShopNow**
+  An end-to-end commerce application with product discovery, cart persistence,
+  atomic ordering, staff operations, analytics, and defensive security
+  controls.
+  <https://github.com/anim-michael-asante/Aerixis-ShopNow>
+
+## Tech stack
+
+- Semantic HTML5
+- Modern CSS3 with custom properties, responsive layouts, fluid typography,
+  gradients, and reduced-motion support
 - Vanilla ES6+ JavaScript
-- [Lucide Icons](https://lucide.dev)
-- Google Fonts:
-  - [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
-  - [Manrope](https://fonts.google.com/specimen/Manrope)
+- [Lucide Icons](https://lucide.dev), pinned to `0.468.0`
+- [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) for display
+  typography
+- [Manrope](https://fonts.google.com/specimen/Manrope) for body copy
+- GitHub Pages for hosting
 
-## Project Structure
+## Site features
+
+- Responsive desktop and mobile navigation
+- Mobile hamburger menu with an in-menu “Let's talk” CTA
+- Dedicated About, Work, FAQ, and Contact pages
+- Marquee-style Work project cards with repository links
+- Accessible native FAQ accordions using `<details>` and `<summary>`
+- Contact page with direct email, LinkedIn, GitHub, and WhatsApp links
+- Shared CTA footer across the main pages
+- Keyboard-visible focus states and semantic landmarks
+- Reduced-motion support for animations and transitions
+- Lazy-loaded below-the-fold images with explicit dimensions where applicable
+- Deferred JavaScript loading
+- Pinned external icon library URL for more predictable caching
+
+## SEO and crawler files
+
+The repository includes the files needed for static-site discovery and
+indexing:
+
+- `robots.txt` allows crawling and points to the sitemap
+- `sitemap.xml` lists the canonical homepage and dedicated pages
+- `llm.txt` provides a concise, machine-readable site and project summary
+- Canonical URLs are defined on the homepage and dedicated pages
+- The homepage includes Open Graph and Twitter/X sharing metadata
+- Page-specific titles and meta descriptions are included throughout the site
+
+After deployment, submit this URL to Google Search Console:
 
 ```text
-├── index.html                 # Page structure, SEO metadata, navigation, sections, and contact modal
-├── 404.html                   # Branded GitHub Pages not-found fallback
-├── About.html                 # Focused About page and build-audit statement
-├── styles.css                 # Design tokens, responsive layout, hero background, and component styles
-├── app.js                     # Navigation, mobile drawer, modal, toast, and form validation behavior
-├── logo.jpeg                  # Aerixis header logo
+https://anim-michael-asante.github.io/portfolio-website/sitemap.xml
+```
+
+## Project structure
+
+```text
+.
+├── index.html                 # Homepage
+├── About.html                 # About page
+├── Work.html                  # Featured work page
+├── FAQ.html                   # FAQ page
+├── Contact.html               # Contact page
+├── 404.html                   # GitHub Pages fallback page
+├── styles.css                 # Shared design system and global components
+├── about.css                  # About page styles
+├── work.css                   # Work page styles
+├── faq.css                    # FAQ page styles
+├── contact.css                # Contact page styles
+├── app.js                     # Homepage navigation and form behavior
+├── about.js                   # About page interactions and quote carousel
+├── work.js                    # Work page navigation behavior
+├── faq.js                     # FAQ page navigation behavior
+├── contact.js                 # Contact page navigation behavior
+├── Projects/                  # Featured project images
+├── Tools/                     # Technology and security tool images
+├── assets/services/           # Local SVG service illustrations
+├── logo.jpeg                  # Site branding image
 ├── Hero-Section.png           # README preview image
-├── Tools/                     # Technology and security tool logos
-├── assets/services/            # Lightweight local SVG service illustrations
-├── favicon.ico                # Browser favicon
-├── favicon-16x16.png          # Small PNG favicon
-├── favicon-32x32.png          # Standard PNG favicon
-├── apple-touch-icon.png       # Apple home-screen icon
-├── android-chrome-192x192.png # Android/PWA icon
-├── android-chrome-512x512.png # Android/PWA icon
-├── site.webmanifest           # Web app metadata
+├── site.webmanifest           # Web app manifest
+├── robots.txt                 # Crawler rules
+├── sitemap.xml                # Canonical URL list
+├── llm.txt                    # Machine-readable site summary
 └── documentation.md           # Design and implementation notes
 ```
 
-## Link Preview Metadata
+## Local development
 
-The homepage includes canonical URL metadata plus Open Graph and Twitter/X
-cards. Social crawlers use the hosted `logo.jpeg` file as the preview image:
-
-`https://anim-michael-asante.github.io/portfolio-website/logo.jpeg`
-
-If the site URL or preview image changes, update the absolute URLs in
-`index.html`. Link previews can be cached by individual platforms, so a
-previously shared URL may need to be re-scraped before the new image appears.
-
-## Hero Content
-
-The hero introduces the current positioning:
-
-> Hey, I'm Michael
->
-> Full-stack developer  
-> freelancer & Web Application Security.
-
-Supporting copy:
-
-> I help ambitious teams and Startups design, secure and ship clear, resilient
-> web applications that are built to last.
-
-The hero background layers are kept separate from the foreground content so
-the typography and messaging can evolve without changing the visual backdrop.
-
-## Accessibility and UX
-
-- Semantic landmarks and heading hierarchy
-- Descriptive logo alternative text
-- Keyboard-visible focus states
-- Mobile navigation with `aria-expanded` and `aria-hidden` state updates
-- Contact dialog with labelled form controls and inline validation messages
-- Visible loading and success feedback for contact submission
-- Reduced-motion override for users who prefer less animation
-- Touch-friendly controls with responsive layouts
-
-## Local Development
-
-No dependencies are required. Serve the repository from its root so relative
-asset paths work correctly:
+No package installation is required. Serve the repository from its root so
+relative links and assets behave as they do on GitHub Pages:
 
 ```bash
 python -m http.server 8080
 ```
 
-Then open [http://localhost:8080](http://localhost:8080).
+Open <http://localhost:8080> in a browser.
 
-You can also use any static file server, for example:
+Alternatively, use any static file server:
 
 ```bash
 npx serve .
 ```
 
-## Deployment
+Do not open the HTML files directly with `file://` when testing navigation,
+asset loading, or crawler files. Use a local HTTP server instead.
 
-This is a static site and can be deployed through GitHub Pages:
+## Deployment
 
 1. Push the repository to GitHub.
 2. Open **Settings → Pages**.
 3. Select **Deploy from a branch**.
-4. Choose the `main` branch and the `/ (root)` folder.
-5. Save the configuration and open the generated Pages URL.
+4. Select the `main` branch and the `/ (root)` folder.
+5. Save the configuration.
+6. Confirm that the published URL matches the canonical URLs in the HTML,
+   `robots.txt`, and `sitemap.xml`.
+7. Submit the sitemap in Google Search Console.
 
-## Notes
+## Validation checklist
 
-- The contact form currently simulates submission in the browser; it does not
-  send data to a backend service.
-- Relative asset paths are used so the site works from a repository subpath,
-  including a GitHub Pages project site.
+Before publishing changes:
+
+```bash
+git diff --check
+```
+
+Then verify:
+
+- Each page loads through the local HTTP server.
+- Navigation links open the intended dedicated page.
+- The mobile hamburger opens and closes correctly.
+- The mobile “Let's talk” link appears inside the hamburger menu.
+- Work repository links open the correct GitHub repositories.
+- FAQ entries open and close with keyboard and pointer input.
+- Contact links use the correct email and social URLs.
+- `robots.txt` points to the live sitemap.
+- `sitemap.xml` contains only canonical indexable pages.
+- Images have meaningful `alt` text and below-the-fold images are lazy-loaded.
+
+## Contact
+
+- Email: <mailto:animmichaelasante@gmail.com>
+- LinkedIn: <https://www.linkedin.com/in/anim-michael-asante/>
+- GitHub: <https://github.com/anim-michael-asante>
+- WhatsApp: <https://wa.me/233541881026>
+
+## Known limitations
+
+- The homepage contact form currently provides browser-side validation and
+  simulated feedback. It does not send submissions to a backend.
+- The site uses Google Fonts and the Lucide CDN, so those resources require a
+  network connection unless they are later self-hosted.
+- GitHub Pages serves the site as static files; dynamic form handling would
+  require a separate trusted service or backend.
