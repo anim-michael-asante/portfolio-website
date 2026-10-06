@@ -9,6 +9,29 @@ This is a framework-free static website built with HTML, CSS, and vanilla
 JavaScript. It can be deployed directly to GitHub Pages without a build step,
 server, database, or runtime dependency.
 
+## Hero Section
+
+![Anim Michael Asante portfolio hero section](./Hero-Section.png)
+
+The homepage opens with a focused introduction to the practice:
+
+> Full-stack engineering and application security for ambitious teams that
+> need clarity, momentum, and resilient software.
+
+The hero section combines:
+
+- A warm-to-cool geometric background with layered translucent panels
+- Clear positioning around secure full-stack development and application
+  security
+- Space Grotesk display typography with Manrope supporting copy
+- Responsive desktop and mobile navigation
+- Primary paths to the Work, About, FAQ, and Contact pages
+- A mobile hamburger menu with the “Let's talk” CTA inside the drawer
+
+The visual system uses a light cream canvas, navy text and surfaces, soft blue
+gradients, and warm amber accents. Motion is limited to purposeful entrance
+and interaction states, with reduced-motion support for accessibility.
+
 ## Live site
 
 <https://anim-michael-asante.github.io/portfolio-website/>
