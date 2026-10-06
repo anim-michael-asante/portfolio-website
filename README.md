@@ -61,7 +61,7 @@ responsive layouts.
 <summary><strong>Slide 1 · Desktop view</strong></summary>
 
 <p align="center">
-  <img src="./Mockups/Desktop%20View.png" alt="Portfolio desktop layout mockup" width="900">
+  <img src="./Mockups/Desktop%20View.png" alt="Portfolio desktop layout mockup" width="1200">
 </p>
 
 </details>
@@ -70,7 +70,7 @@ responsive layouts.
 <summary><strong>Slide 2 · Tablet view</strong></summary>
 
 <p align="center">
-  <img src="./Mockups/Tablet%20view.png" alt="Portfolio tablet layout mockup" width="700">
+  <img src="./Mockups/Tablet%20view.png" alt="Portfolio tablet layout mockup" width="900">
 </p>
 
 </details>
@@ -79,14 +79,10 @@ responsive layouts.
 <summary><strong>Slide 3 · Mobile view</strong></summary>
 
 <p align="center">
-  <img src="./Mockups/Mobile%20view.png" alt="Portfolio mobile layout mockup" width="420">
+  <img src="./Mockups/Mobile%20view.png" alt="Portfolio mobile layout mockup" width="620">
 </p>
 
 </details>
-
-> GitHub README files do not run custom JavaScript, so the gallery uses native
-> expandable slides instead of an auto-playing carousel. This keeps the images
-> accessible and works without external dependencies.
 
 ## Live site
 
