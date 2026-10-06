@@ -1,0 +1,24 @@
+# Anim Michael Asante Portfolio
+
+This is the portfolio of Anim Michael Asante, a full-stack engineer and application security specialist.
+
+## Canonical pages
+
+- Home: https://anim-michael-asante.github.io/portfolio-website/
+- About: https://anim-michael-asante.github.io/portfolio-website/About.html
+- Work: https://anim-michael-asante.github.io/portfolio-website/Work.html
+- FAQ: https://anim-michael-asante.github.io/portfolio-website/FAQ.html
+- Contact: https://anim-michael-asante.github.io/portfolio-website/Contact.html
+
+## Focus
+
+The site covers secure web applications, full-stack development, application security, API design, input validation, deployment hardening, and practical security testing.
+
+## Featured work
+
+- PortSwigger Web Security Academy write-ups: https://github.com/anim-michael-asante/portswigger-web-security-writeups
+- PaperlessEdu: https://github.com/anim-michael-asante/PaperlessEdu
+- SecureVault: https://github.com/anim-michael-asante/SecureVault-Role-Based-Encrypted-File-Portal
+- Aerixis ShopNow: https://github.com/anim-michael-asante/Aerixis-ShopNow
+
+For collaboration inquiries, use the Contact page or email animmichaelasante@gmail.com.

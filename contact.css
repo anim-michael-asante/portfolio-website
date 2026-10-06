@@ -1,0 +1,197 @@
+.contact-page {
+  background: linear-gradient(100deg, hsl(33, 40%, 98%), hsl(210, 33%, 98%));
+}
+
+.contact-hero {
+  display: flex;
+  min-height: 530px;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  padding: clamp(96px, 12vw, 160px) max(32px, 6vw) clamp(56px, 8vw, 100px);
+  border-top: 1px solid var(--color-text-primary);
+}
+
+.contact-hero-copy {
+  max-width: 820px;
+}
+
+.contact-kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.contact-kicker span {
+  width: 28px;
+  height: 2px;
+  background: hsl(31, 91%, 62%);
+}
+
+.contact-hero h1,
+.contact-links-heading h2,
+.contact-banner h2 {
+  margin-top: var(--space-md);
+  color: var(--color-text-primary);
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 8vw, 7.4rem);
+  line-height: 0.93;
+  letter-spacing: -0.07em;
+}
+
+.contact-hero h1 em,
+.contact-links-heading h2 em,
+.contact-banner h2 em {
+  color: hsl(31, 91%, 62%);
+  font-style: normal;
+}
+
+.contact-hero-copy > p:last-child {
+  max-width: 520px;
+  margin-top: var(--space-lg);
+  color: var(--color-text-secondary);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.65;
+}
+
+.contact-links-section {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(40px, 10vw, 150px);
+  padding: var(--space-2xl) max(32px, 6vw);
+  background: var(--color-dark);
+}
+
+.contact-links-heading h2 {
+  color: var(--color-surface);
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+}
+
+.contact-links {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.contact-link-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  min-height: 88px;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid hsla(0, 0%, 100%, 0.18);
+  border-radius: var(--radius-md);
+  color: var(--color-surface);
+  transition: background var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.contact-link-card:hover {
+  transform: translateX(6px);
+  border-color: hsl(31, 91%, 73%);
+  background: hsla(0, 0%, 100%, 0.07);
+}
+
+.contact-link-card:focus-visible {
+  outline: 2px solid hsl(31, 91%, 73%);
+  outline-offset: 4px;
+}
+
+.contact-link-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: hsl(31, 91%, 62%);
+  color: var(--color-dark);
+}
+
+.contact-link-icon i {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-link-mark {
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.contact-link-card span:nth-child(2) {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-link-card small {
+  color: hsl(215, 16%, 67%);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.contact-link-card strong {
+  font-size: 0.95rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.contact-link-arrow {
+  width: 18px;
+  height: 18px;
+  color: hsl(31, 91%, 73%);
+}
+
+.contact-banner {
+  padding: var(--space-2xl) var(--space-md);
+  text-align: center;
+}
+
+.contact-banner .contact-kicker {
+  justify-content: center;
+}
+
+.contact-banner h2 {
+  margin-bottom: var(--space-lg);
+  font-size: clamp(2.8rem, 6vw, 5.8rem);
+}
+
+.contact-banner-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: 44px;
+  padding: 12px 22px;
+  border-radius: var(--radius-pill);
+  background: var(--color-dark);
+  color: var(--color-surface);
+}
+
+.contact-banner-button:hover {
+  background: hsl(31, 91%, 62%);
+  color: var(--color-dark);
+}
+
+.contact-banner-button i {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 767px) {
+  .contact-hero {
+    min-height: 560px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-links-section {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    padding-right: var(--space-sm);
+    padding-left: var(--space-sm);
+  }
+}

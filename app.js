@@ -106,8 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      if (contactModal.classList.contains('open')) closeContactModal();
-      if (mobileDrawer.classList.contains('open')) toggleMobileMenu(false);
+      if (contactModal && contactModal.classList.contains('open')) {
+        closeContactModal();
+      }
+      if (mobileDrawer && mobileDrawer.classList.contains('open')) {
+        toggleMobileMenu(false);
+      }
     }
   });
 

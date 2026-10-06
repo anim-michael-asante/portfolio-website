@@ -9,6 +9,11 @@
       content="Portfolio of Anim Michael Asante, a full-stack engineer and application security specialist helping ambitious teams build software that lasts."
     />
     <meta name="author" content="Anim Michael Asante" />
+    <meta name="theme-color" content="#fafbfc" />
+    <link
+      rel="canonical"
+      href="https://anim-michael-asante.github.io/portfolio-website/"
+    />
 
     <!-- Favicon assets -->
     <link rel="icon" href="favicon.ico" sizes="any" />
@@ -31,8 +36,12 @@
     />
     <link rel="manifest" href="site.webmanifest" />
 
-    <!-- Open Graph / Meta -->
+    <!-- Social sharing metadata -->
     <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://anim-michael-asante.github.io/portfolio-website/"
+    />
     <meta
       property="og:title"
       content="Anim Michael Asante — Full-stack engineer & AppSec specialist"
@@ -40,6 +49,35 @@
     <meta
       property="og:description"
       content="Full-stack engineering and application security for ambitious teams that need clarity, momentum, and software that lasts."
+    />
+    <meta
+      property="og:image"
+      content="https://anim-michael-asante.github.io/portfolio-website/logo.jpeg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://anim-michael-asante.github.io/portfolio-website/logo.jpeg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="Aerixis — Full Stack Developer, AppSec" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Anim Michael Asante — Full-stack engineer & AppSec specialist"
+    />
+    <meta
+      name="twitter:description"
+      content="Full-stack engineering and application security for ambitious teams that need clarity, momentum, and software that lasts."
+    />
+    <meta
+      name="twitter:image"
+      content="https://anim-michael-asante.github.io/portfolio-website/logo.jpeg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Aerixis — Full Stack Developer, AppSec"
     />
 
     <!-- Google Fonts: Space Grotesk for display, Manrope for supporting copy -->
@@ -54,7 +92,7 @@
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Lucide Icons via CDN -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@0.468.0" defer></script>
   </head>
   <body>
     <!-- Header / Navigation (Matching Reference Image) -->
@@ -80,29 +118,25 @@
               <a href="#hero" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
+              <a href="About.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#work" class="nav-link">Work</a>
+              <a href="Work.html" class="nav-link">Work</a>
             </li>
             <li class="nav-item">
-              <a href="#faq" class="nav-link">FAQ</a>
+              <a href="FAQ.html" class="nav-link">FAQ</a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="Contact.html" class="nav-link">Contact</a>
             </li>
           </ul>
         </nav>
 
         <!-- Right: Action Button (No Dark Theme Toggle) -->
         <div class="header-actions">
-          <button
-            type="button"
-            class="btn btn-pill-dark open-contact-btn"
-            id="headerContactBtn"
-          >
+          <a class="btn btn-pill-dark" href="Contact.html">
             Let's talk
-          </button>
+          </a>
           <button
             type="button"
             class="mobile-toggle"
@@ -123,19 +157,16 @@
         <nav class="mobile-nav" aria-label="Mobile Navigation">
           <ul class="mobile-nav-list">
             <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
-            <li><a href="#about" class="mobile-nav-link">About</a></li>
-            <li><a href="#work" class="mobile-nav-link">Work</a></li>
-            <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
-            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            <li><a href="About.html" class="mobile-nav-link">About</a></li>
+            <li><a href="Work.html" class="mobile-nav-link">Work</a></li>
+            <li><a href="FAQ.html" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="Contact.html" class="mobile-nav-link">Contact</a></li>
           </ul>
         </nav>
         <div class="mobile-drawer-footer">
-          <button
-            type="button"
-            class="btn btn-pill-dark w-full open-contact-btn"
-          >
+          <a class="btn btn-pill-dark w-full" href="Contact.html">
             Let's talk
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -208,141 +239,141 @@
           <div class="tools-marquee-track">
             <ul class="tools-marquee-list" aria-label="Tools and technologies">
               <li class="tool-item">
-                <img src="Tools/Python.jpg" alt="Python" />
+                <img loading="lazy" src="Tools/Python.jpg" alt="Python" />
                 <span>Python</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Django.webp" alt="Django" />
+                <img loading="lazy" src="Tools/Django.webp" alt="Django" />
                 <span>Django</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Railway.png" alt="Railway" />
+                <img loading="lazy" src="Tools/Railway.png" alt="Railway" />
                 <span>Railway</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Kali.png" alt="Kali Linux" />
+                <img loading="lazy" src="Tools/Kali.png" alt="Kali Linux" />
                 <span>Kali Linux</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Burpsuite.png" alt="Burp Suite" />
+                <img loading="lazy" src="Tools/Burpsuite.png" alt="Burp Suite" />
                 <span>Burp Suite</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Metasploit.png" alt="Metasploit" />
+                <img loading="lazy" src="Tools/Metasploit.png" alt="Metasploit" />
                 <span>Metasploit</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/React.png" alt="React" />
+                <img loading="lazy" src="Tools/React.png" alt="React" />
                 <span>React</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/tailwindcss.png" alt="Tailwind CSS" />
+                <img loading="lazy" src="Tools/tailwindcss.png" alt="Tailwind CSS" />
                 <span>Tailwind CSS</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Git.png" alt="Git" />
+                <img loading="lazy" src="Tools/Git.png" alt="Git" />
                 <span>Git</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Github.png" alt="GitHub" />
+                <img loading="lazy" src="Tools/Github.png" alt="GitHub" />
                 <span>GitHub</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Figma.png" alt="Figma" />
+                <img loading="lazy" src="Tools/Figma.png" alt="Figma" />
                 <span>Figma</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Canva.jpg" alt="Canva" />
+                <img loading="lazy" src="Tools/Canva.jpg" alt="Canva" />
                 <span>Canva</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Stitch.jpg" alt="Stitch" />
+                <img loading="lazy" src="Tools/Stitch.jpg" alt="Stitch" />
                 <span>Stitch</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Front-End.jpg" alt="Frontend development" />
+                <img loading="lazy" src="Tools/Front-End.jpg" alt="Frontend development" />
                 <span>Frontend</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Linux.jpg" alt="Linux" />
+                <img loading="lazy" src="Tools/Linux.jpg" alt="Linux" />
                 <span>Linux</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/nmap.jpg" alt="Nmap" />
+                <img loading="lazy" src="Tools/nmap.jpg" alt="Nmap" />
                 <span>Nmap</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Openvas.jpg" alt="OpenVAS" />
+                <img loading="lazy" src="Tools/Openvas.jpg" alt="OpenVAS" />
                 <span>OpenVAS</span>
               </li>
             </ul>
             <ul class="tools-marquee-list" aria-hidden="true">
               <li class="tool-item">
-                <img src="Tools/Python.jpg" alt="" />
+                <img loading="lazy" src="Tools/Python.jpg" alt="" />
                 <span>Python</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Django.webp" alt="" />
+                <img loading="lazy" src="Tools/Django.webp" alt="" />
                 <span>Django</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Railway.png" alt="" />
+                <img loading="lazy" src="Tools/Railway.png" alt="" />
                 <span>Railway</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Kali.png" alt="" />
+                <img loading="lazy" src="Tools/Kali.png" alt="" />
                 <span>Kali Linux</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Burpsuite.png" alt="" />
+                <img loading="lazy" src="Tools/Burpsuite.png" alt="" />
                 <span>Burp Suite</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Metasploit.png" alt="" />
+                <img loading="lazy" src="Tools/Metasploit.png" alt="" />
                 <span>Metasploit</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/React.png" alt="" />
+                <img loading="lazy" src="Tools/React.png" alt="" />
                 <span>React</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/tailwindcss.png" alt="" />
+                <img loading="lazy" src="Tools/tailwindcss.png" alt="" />
                 <span>Tailwind CSS</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Git.png" alt="" />
+                <img loading="lazy" src="Tools/Git.png" alt="" />
                 <span>Git</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Github.png" alt="" />
+                <img loading="lazy" src="Tools/Github.png" alt="" />
                 <span>GitHub</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Figma.png" alt="" />
+                <img loading="lazy" src="Tools/Figma.png" alt="" />
                 <span>Figma</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Canva.jpg" alt="" />
+                <img loading="lazy" src="Tools/Canva.jpg" alt="" />
                 <span>Canva</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Stitch.jpg" alt="" />
+                <img loading="lazy" src="Tools/Stitch.jpg" alt="" />
                 <span>Stitch</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Front-End.jpg" alt="" />
+                <img loading="lazy" src="Tools/Front-End.jpg" alt="" />
                 <span>Frontend</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Linux.jpg" alt="" />
+                <img loading="lazy" src="Tools/Linux.jpg" alt="" />
                 <span>Linux</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/nmap.jpg" alt="" />
+                <img loading="lazy" src="Tools/nmap.jpg" alt="" />
                 <span>Nmap</span>
               </li>
               <li class="tool-item">
-                <img src="Tools/Openvas.jpg" alt="" />
+                <img loading="lazy" src="Tools/Openvas.jpg" alt="" />
                 <span>OpenVAS</span>
               </li>
             </ul>
@@ -570,10 +601,50 @@
       </div>
     </div>
 
+    <footer class="site-footer">
+      <div class="footer-cta">
+        <p class="footer-kicker">Build with confidence</p>
+        <h2>Ready to build something that lasts?</h2>
+        <p>
+          Bring your next idea, challenge, or security concern. Let’s turn it
+          into software that works and holds up.
+        </p>
+        <a class="btn footer-cta-button" href="Contact.html">Let’s talk</a>
+      </div>
+      <div class="footer-panel">
+        <div class="footer-brand">
+          <a class="footer-logo" href="#hero" aria-label="Return to homepage">
+            <img src="logo.jpeg" alt="Aerixis" />
+            <span>Aerixis</span>
+          </a>
+          <p>
+            Full-stack engineering and application security for ambitious teams
+            that need clarity, momentum, and resilient software.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <div>
+            <h3>Explore</h3>
+            <a href="Work.html">Work</a>
+            <a href="FAQ.html">FAQ</a>
+          </div>
+          <div>
+            <h3>Connect</h3>
+            <a href="Contact.html">Contact</a>
+            <a href="About.html">About</a>
+          </div>
+        </nav>
+        <div class="footer-bottom">
+          <span>© 2026 Anim Michael Asante. All rights reserved.</span>
+          <span>Built with intention. Secured by default.</span>
+        </div>
+      </div>
+    </footer>
+
     <!-- Global Toast Notification Container -->
     <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
     <!-- Application Script -->
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
   </body>
 </html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work | Michael Asante Anim</title>
+    <meta
+      name="description"
+      content="Selected work by Michael Asante Anim across application security, education, file protection, and digital commerce."
+    />
+    <meta name="author" content="Anim Michael Asante" />
+    <link
+      rel="canonical"
+      href="https://anim-michael-asante.github.io/portfolio-website/Work.html"
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="work.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@0.468.0" defer></script>
+  </head>
+  <body class="work-page">
+    <header class="site-header" id="siteHeader">
+      <div class="nav-container">
+        <a class="brand-avatar-badge" href="index.html" aria-label="Return home">
+          <img class="brand-logo" src="logo.jpeg" alt="Aerixis, Full Stack Developer, AppSec" />
+        </a>
+        <nav class="center-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="About.html" class="nav-link">About</a></li>
+            <li><a href="Work.html" class="nav-link active">Work</a></li>
+            <li><a href="FAQ.html" class="nav-link">FAQ</a></li>
+            <li><a href="Contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-pill-dark" href="Contact.html">Let's talk</a>
+          <button
+            type="button"
+            class="mobile-toggle"
+            id="mobileMenuToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" id="hamburgerIcon"></i>
+            <i data-lucide="x" id="closeMenuIcon" class="hidden"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="About.html" class="mobile-nav-link">About</a></li>
+            <li><a href="Work.html" class="mobile-nav-link active">Work</a></li>
+            <li><a href="FAQ.html" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="Contact.html" class="mobile-nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-drawer-footer">
+          <a class="btn btn-pill-dark w-full" href="Contact.html">Let's talk</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="work-intro" aria-labelledby="workTitle">
+        <p class="work-kicker"><span></span>Selected work</p>
+        <h1 id="workTitle">Projects built to<br /><em>solve real problems.</em></h1>
+        <p class="work-lead">
+          A moving collection of systems, security research, and products built
+          with thoughtful engineering and a strong security foundation.
+        </p>
+      </section>
+
+      <section class="work-marquee" aria-label="Project portfolio">
+        <div class="work-marquee-row">
+          <div class="work-track">
+            <article class="work-card">
+              <div class="work-card-image">
+                <img src="Projects/Portswigger%20Write-ups.svg" alt="PortSwigger Web Security Academy write-ups project" width="640" height="400" />
+                <span class="work-card-number">01</span>
+              </div>
+              <div class="work-card-content">
+                <p class="work-card-type">Application Security</p>
+                <h2>PortSwigger Write-ups</h2>
+                <p>
+                  A structured collection of hands-on web security lab writeups
+                  covering exploitation, remediation, and attack methodology.
+                </p>
+                <a class="work-github" href="https://github.com/anim-michael-asante/portswigger-web-security-writeups" target="_blank" rel="noopener noreferrer" aria-label="Open PortSwigger Write-ups on GitHub">
+                  <img class="github-logo" src="Tools/Github.png" alt="" /><span>View repository</span>
+                </a>
+              </div>
+            </article>
+            <article class="work-card">
+              <div class="work-card-image">
+                <img src="Projects/paperlessEdu.png" alt="PaperlessEdu school management system project" width="640" height="400" loading="lazy" />
+                <span class="work-card-number">02</span>
+              </div>
+              <div class="work-card-content">
+                <p class="work-card-type">Education Platform</p>
+                <h2>PaperlessEdu</h2>
+                <p>
+                  A secure Django and PWA school management system for digital,
+                  audited attendance, report cards, and fee receipts.
+                </p>
+                <a class="work-github" href="https://github.com/anim-michael-asante/PaperlessEdu" target="_blank" rel="noopener noreferrer" aria-label="Open PaperlessEdu on GitHub">
+                  <img class="github-logo" src="Tools/Github.png" alt="" /><span>View repository</span>
+                </a>
+              </div>
+            </article>
+            <article class="work-card">
+              <div class="work-card-image">
+                <img src="Projects/SecureVault.png" alt="SecureVault encrypted file portal project" width="640" height="400" loading="lazy" />
+                <span class="work-card-number">03</span>
+              </div>
+              <div class="work-card-content">
+                <p class="work-card-type">Security Platform</p>
+                <h2>SecureVault</h2>
+                <p>
+                  A role-based encrypted file portal with AES-256 protection
+                  and exact department and access control matching.
+                </p>
+                <a class="work-github" href="https://github.com/anim-michael-asante/SecureVault-Role-Based-Encrypted-File-Portal" target="_blank" rel="noopener noreferrer" aria-label="Open SecureVault on GitHub">
+                  <img class="github-logo" src="Tools/Github.png" alt="" /><span>View repository</span>
+                </a>
+              </div>
+            </article>
+            <article class="work-card">
+              <div class="work-card-image">
+                <img src="Projects/ShopNow.png" alt="Aerixis ShopNow digital commerce project" width="640" height="400" loading="lazy" />
+                <span class="work-card-number">04</span>
+              </div>
+              <div class="work-card-content">
+                <p class="work-card-type">Digital Commerce</p>
+                <h2>ShopNow</h2>
+                <p>
+                  An end-to-end commerce platform with atomic ordering, staff
+                  operations, analytics, and defense-in-depth security.
+                </p>
+                <a class="work-github" href="https://github.com/anim-michael-asante/Aerixis-ShopNow" target="_blank" rel="noopener noreferrer" aria-label="Open ShopNow on GitHub">
+                  <img class="github-logo" src="Tools/Github.png" alt="" /><span>View repository</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="work-marquee-note">Hover to pause · Click the GitHub logo to explore</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-cta">
+        <p class="footer-kicker">Build with confidence</p>
+        <h2>Ready to build something that lasts?</h2>
+        <p>
+          Bring your next idea, challenge, or security concern. Let's turn it
+          into software that works and holds up.
+        </p>
+        <a class="btn footer-cta-button" href="Contact.html">Let's talk</a>
+      </div>
+      <div class="footer-panel">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" aria-label="Return to homepage">
+            <img src="logo.jpeg" alt="Aerixis" /><span>Aerixis</span>
+          </a>
+          <p>Full-stack engineering and application security for ambitious teams that need clarity, momentum, and resilient software.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <div><h3>Explore</h3><a href="Work.html">Work</a><a href="About.html">About</a></div>
+          <div><h3>Connect</h3><a href="Contact.html">Contact</a><a href="FAQ.html">FAQ</a></div>
+        </nav>
+        <div class="footer-bottom">
+          <span>© 2026 Anim Michael Asante. All rights reserved.</span>
+          <span>Built with intention. Secured by default.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="work.js" defer></script>
+  </body>
+</html>

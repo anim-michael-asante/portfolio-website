@@ -40,9 +40,28 @@ A high-precision, centered Hero Section website for **Michael Asante Anim (0x1ae
 ### 4. Interactive Contact Modal
 - 8-state dialog for inquiries (penetration testing, code reviews, Django development), with OWASP input sanitization, focus trap, and toast notifications.
 
+### 5. About Page (About.html)
+Full premium About page with warm amber/peach palette (hsl(31, 91%, 73%)).
+
+**Sections:**
+1. **Hero** — Circular portrait with animated ring pulse, "I'm Michael." headline, lead paragraph, and animated stat counters (5 Certifications, 15+ Tools, 2 Disciplines).
+2. **My Approach** — "Build. Audit. Secure. Ship." philosophy with 4 pillar cards (Build with intention, Test every assumption, Harden by default, Ship with confidence).
+3. **Certifications** — Dark navy section with glassmorphism cards for Google Cybersecurity Professional, GitHub, Cisco, Anthropic, and Microsoft certifications.
+4. **Journey / Timeline** — Sticky header with vertical warm-amber timeline showing career progression.
+5. **Tech Stack** — Categorized pill badges (Development, Security & Pen Testing, Design & Deployment) with tinted hover states.
+6. **CTA** — Dark navy section with warm amber "Let's talk" button and ambient glows.
+
+**Design Decisions:**
+- Warm amber palette chosen for approachability and personality contrast against the professional navy.
+- Scroll-reveal animations via IntersectionObserver with staggered timing for visual depth.
+- Counter animation on stats for engagement.
+- Separate CSS/JS files (`about.css`, `about.js`) to avoid bloating the shared stylesheet.
+
 ## File Structure
 - `index.html` — Clean semantic structure with updated centered layout.
 - `styles.css` — Design tokens, Space Grotesk / Manrope typography, static glass background, and pill buttons.
+- `about.css` — About page-specific styles: warm amber palette, hero portrait, pillar cards, cert cards, timeline, tech stack pills, CTA section.
 - `app.js` — Navigation state management, mobile menu drawer, and modal form controller.
+- `about.js` — About page scroll-reveal animations, counter animations, and mobile menu re-binding.
 - `documentation.md` — Project specification and architecture.
 - `README.md` — Deployment and project summary.

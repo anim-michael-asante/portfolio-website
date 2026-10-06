@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ | Michael Asante Anim</title>
+    <meta
+      name="description"
+      content="Answers to common questions about full-stack development, application security, timelines, and project collaboration."
+    />
+    <meta name="author" content="Anim Michael Asante" />
+    <link
+      rel="canonical"
+      href="https://anim-michael-asante.github.io/portfolio-website/FAQ.html"
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@0.468.0" defer></script>
+  </head>
+  <body class="faq-page">
+    <header class="site-header" id="siteHeader">
+      <div class="nav-container">
+        <a class="brand-avatar-badge" href="index.html" aria-label="Return home">
+          <img class="brand-logo" src="logo.jpeg" alt="Aerixis, Full Stack Developer, AppSec" />
+        </a>
+        <nav class="center-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="About.html" class="nav-link">About</a></li>
+            <li><a href="Work.html" class="nav-link">Work</a></li>
+            <li><a href="FAQ.html" class="nav-link active">FAQ</a></li>
+            <li><a href="Contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-pill-dark" href="Contact.html">Let's talk</a>
+          <button type="button" class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i data-lucide="menu" id="hamburgerIcon"></i>
+            <i data-lucide="x" id="closeMenuIcon" class="hidden"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="About.html" class="mobile-nav-link">About</a></li>
+            <li><a href="Work.html" class="mobile-nav-link">Work</a></li>
+            <li><a href="FAQ.html" class="mobile-nav-link active">FAQ</a></li>
+            <li><a href="Contact.html" class="mobile-nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-drawer-footer">
+          <a class="btn btn-pill-dark w-full" href="Contact.html">Let's talk</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="faq-intro" aria-labelledby="faqTitle">
+        <p class="faq-kicker"><span></span>Common questions</p>
+        <h1 id="faqTitle">Clear answers<br /><em>before we build.</em></h1>
+        <p>
+          A few things people usually want to know before starting a
+          development or application security project.
+        </p>
+      </section>
+
+      <section class="faq-list-section" aria-labelledby="faqListTitle">
+        <div class="faq-list-wrap">
+          <div class="faq-list-heading">
+            <p class="faq-kicker"><span></span>FAQ</p>
+            <h2 id="faqListTitle">The practical stuff.</h2>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>What kind of projects do you work on?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>I work on full-stack websites, web applications, progressive web apps, redesigns, and application security projects for teams that want dependable software.</p>
+            </details>
+            <details>
+              <summary>Can you help with both development and security?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>Yes. I can build the product, review an existing application, test attack paths, or combine development and security into one delivery process.</p>
+            </details>
+            <details>
+              <summary>What does an application security review include?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>The scope can cover authentication, authorization, input handling, APIs, file uploads, business logic, configuration, and deployment risks. You receive clear findings with practical remediation steps.</p>
+            </details>
+            <details>
+              <summary>How long does a project usually take?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>It depends on the scope and starting point. A focused review may take a few days, while a new product is planned in milestones so progress stays visible from the beginning.</p>
+            </details>
+            <details>
+              <summary>What happens after I send an inquiry?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>We start with a short conversation about your goals, users, timeline, and risks. I then recommend a focused next step with a clear scope and delivery path.</p>
+            </details>
+            <details>
+              <summary>Do you work with existing teams and codebases?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>Absolutely. I can join an existing workflow, improve a specific part of the product, or provide a security-focused second set of eyes without disrupting the team.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-cta" aria-labelledby="faqCtaTitle">
+        <p class="faq-kicker"><span></span>Still have a question?</p>
+        <h2 id="faqCtaTitle">Let's make it<br /><em>concrete.</em></h2>
+        <a class="btn btn-pill-dark" href="Contact.html">Start a conversation</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-cta">
+        <p class="footer-kicker">Build with confidence</p>
+        <h2>Ready to build something that lasts?</h2>
+        <p>Bring your next idea, challenge, or security concern. Let's turn it into software that works and holds up.</p>
+        <a class="btn footer-cta-button" href="Contact.html">Let's talk</a>
+      </div>
+      <div class="footer-panel">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" aria-label="Return to homepage"><img src="logo.jpeg" alt="Aerixis" /><span>Aerixis</span></a>
+          <p>Full-stack engineering and application security for ambitious teams that need clarity, momentum, and resilient software.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <div><h3>Explore</h3><a href="Work.html">Work</a><a href="About.html">About</a></div>
+          <div><h3>Connect</h3><a href="Contact.html">Contact</a><a href="FAQ.html">FAQ</a></div>
+        </nav>
+        <div class="footer-bottom"><span>© 2026 Anim Michael Asante. All rights reserved.</span><span>Built with intention. Secured by default.</span></div>
+      </div>
+    </footer>
+    <script src="faq.js" defer></script>
+  </body>
+</html>

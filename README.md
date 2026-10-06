@@ -28,6 +28,13 @@ The current experience is centered around a single, high-impact hero section:
   penetration testing, secure development guidance, and hardening
 - Branded `404.html` fallback page for GitHub Pages with the same geometric
   hero background and a clear route back home
+- Dedicated `About.html` page with a focused editorial introduction to the
+  full-stack and application security practice
+- Minimal editorial About layout with a clean white canvas, oversized
+  typography, restrained blue accents, and a simple build-and-audit statement
+- About-page staggered entrance animations with reduced-motion support
+- Open Graph and Twitter/X metadata with the hosted Aerixis logo for rich link
+  previews when the portfolio URL is shared
 - Contact modal with client-side validation and feedback
 - Staggered hero entrance animation with reduced-motion support
 
@@ -52,6 +59,7 @@ panels.
 ```text
 ├── index.html                 # Page structure, SEO metadata, navigation, sections, and contact modal
 ├── 404.html                   # Branded GitHub Pages not-found fallback
+├── About.html                 # Focused About page and build-audit statement
 ├── styles.css                 # Design tokens, responsive layout, hero background, and component styles
 ├── app.js                     # Navigation, mobile drawer, modal, toast, and form validation behavior
 ├── logo.jpeg                  # Aerixis header logo
@@ -67,6 +75,17 @@ panels.
 ├── site.webmanifest           # Web app metadata
 └── documentation.md           # Design and implementation notes
 ```
+
+## Link Preview Metadata
+
+The homepage includes canonical URL metadata plus Open Graph and Twitter/X
+cards. Social crawlers use the hosted `logo.jpeg` file as the preview image:
+
+`https://anim-michael-asante.github.io/portfolio-website/logo.jpeg`
+
+If the site URL or preview image changes, update the absolute URLs in
+`index.html`. Link previews can be cached by individual platforms, so a
+previously shared URL may need to be re-scraped before the new image appears.
 
 ## Hero Content
 
