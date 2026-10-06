@@ -750,6 +750,8 @@ ul {
   z-index: 2;
   overflow: hidden;
   padding: var(--space-xl) 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 280px;
   background: hsl(222, 47%, 11%);
   color: hsl(0, 0%, 100%);
 }
@@ -850,6 +852,8 @@ ul {
 .services-section {
   padding: clamp(56px, 7vw, 88px) 0 clamp(64px, 8vw, 104px);
   overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
   background:
     radial-gradient(
       circle at 88% 16%,
@@ -1746,8 +1750,21 @@ ul {
    -------------------------------------------------------------------------- */
 .site-footer {
   padding: var(--space-2xl) var(--space-sm) var(--space-xl);
+  content-visibility: auto;
+  contain-intrinsic-size: 620px;
   background:
     linear-gradient(180deg, var(--color-bg), hsl(210, 27%, 94%));
+}
+
+@media (max-width: 767px) {
+  .hero-ambient-glow {
+    filter: blur(36px);
+  }
+
+  .glass-plate {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 }
 
 .footer-cta,
@@ -1760,6 +1777,8 @@ ul {
 .footer-cta {
   position: relative;
   overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: 760px;
   padding: clamp(48px, 8vw, 88px) var(--space-md);
   background:
     radial-gradient(circle at 50% -30%, hsla(31, 91%, 73%, 0.28), transparent 48%),
