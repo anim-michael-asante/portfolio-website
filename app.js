@@ -66,6 +66,34 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => toggleMobileMenu(false));
   });
 
+  // Let desktop users drag the horizontally scrolling service cards.
+  const servicesGrid = document.querySelector('.services-grid');
+  if (servicesGrid) {
+    let dragStartX = 0;
+    let startScrollLeft = 0;
+    let isDragging = false;
+
+    servicesGrid.addEventListener('pointerdown', (event) => {
+      isDragging = true;
+      dragStartX = event.clientX;
+      startScrollLeft = servicesGrid.scrollLeft;
+      servicesGrid.setPointerCapture(event.pointerId);
+    });
+
+    servicesGrid.addEventListener('pointermove', (event) => {
+      if (!isDragging) return;
+      servicesGrid.scrollLeft = startScrollLeft - (event.clientX - dragStartX);
+    });
+
+    servicesGrid.addEventListener('pointerup', () => {
+      isDragging = false;
+    });
+
+    servicesGrid.addEventListener('pointercancel', () => {
+      isDragging = false;
+    });
+  }
+
   // 5. Hero background kept static without parallax motion as requested
 
   // 6. Contact Modal Handling ("Let's talk")
