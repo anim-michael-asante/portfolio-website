@@ -113,6 +113,9 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="work.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="faq.css" />
 
     <!-- Lucide Icons via CDN -->
     <script src="https://unpkg.com/lucide@0.468.0" defer></script>
@@ -150,13 +153,13 @@
               <a href="About.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="Work.html" class="nav-link">Work</a>
+              <a href="#work-section" class="nav-link">Work</a>
             </li>
             <li class="nav-item">
-              <a href="FAQ.html" class="nav-link">FAQ</a>
+              <a href="#faq-section" class="nav-link">FAQ</a>
             </li>
             <li class="nav-item">
-              <a href="Contact.html" class="nav-link">Contact</a>
+              <a href="#contact-section" class="nav-link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -187,9 +190,9 @@
           <ul class="mobile-nav-list">
             <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
             <li><a href="About.html" class="mobile-nav-link">About</a></li>
-            <li><a href="Work.html" class="mobile-nav-link">Work</a></li>
-            <li><a href="FAQ.html" class="mobile-nav-link">FAQ</a></li>
-            <li><a href="Contact.html" class="mobile-nav-link">Contact</a></li>
+            <li><a href="#work-section" class="mobile-nav-link">Work</a></li>
+            <li><a href="#faq-section" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="#contact-section" class="mobile-nav-link">Contact</a></li>
           </ul>
         </nav>
         <div class="mobile-drawer-footer">
@@ -507,6 +510,189 @@
           </div>
         </div>
       </section>
+
+      <section class="work-intro" id="work-section" aria-labelledby="workTitle">
+        <p class="work-kicker"><span></span>Selected work</p>
+        <h1 id="workTitle">Projects built to<br /><em>solve real problems.</em></h1>
+        <p class="work-lead">
+          A moving collection of systems, security research, and products built
+          with thoughtful engineering and a strong security foundation.
+        </p>
+      </section>
+
+      <section class="work-marquee" aria-label="Project portfolio">
+        <div class="work-marquee-row">
+          <div class="work-track">
+            <article class="work-card">
+              <div class="work-card-image">
+                <img src="Projects/Portswigger%20Write-ups.svg" alt="PortSwigger Web Security Academy write-ups project" width="640" height="400" />
+                <span class="work-card-number">01</span>
+              </div>
+              <div class="work-card-content">
+                <p class="work-card-type">Application Security</p>
+                <h2>PortSwigger Write-ups</h2>
+                <p>
+                  A structured collection of hands-on web security lab writeups
+                  covering exploitation, remediation, and attack methodology.
+                </p>
+                <a class="work-github" href="https://github.com/anim-michael-asante/portswigger-web-security-writeups" target="_blank" rel="noopener noreferrer" aria-label="Open PortSwigger Write-ups on GitHub">
+                  <img class="github-logo" src="Tools/Github.png" alt="" /><span>View repository</span>
+                </a>
+              </div>
+            </article>
+            <article class="work-card">
+              <div class="work-card-image">
+                <img src="Projects/paperlessEdu.png" alt="PaperlessEdu school management system project" width="640" height="400" loading="lazy" />
+                <span class="work-card-number">02</span>
+              </div>
+              <div class="work-card-content">
+                <p class="work-card-type">Education Platform</p>
+                <h2>PaperlessEdu</h2>
+                <p>
+                  A secure Django and PWA school management system for digital,
+                  audited attendance, report cards, and fee receipts.
+                </p>
+                <a class="work-github" href="https://github.com/anim-michael-asante/PaperlessEdu" target="_blank" rel="noopener noreferrer" aria-label="Open PaperlessEdu on GitHub">
+                  <img class="github-logo" src="Tools/Github.png" alt="" /><span>View repository</span>
+                </a>
+              </div>
+            </article>
+            <article class="work-card">
+              <div class="work-card-image">
+                <img src="Projects/SecureVault.png" alt="SecureVault encrypted file portal project" width="640" height="400" loading="lazy" />
+                <span class="work-card-number">03</span>
+              </div>
+              <div class="work-card-content">
+                <p class="work-card-type">Security Platform</p>
+                <h2>SecureVault</h2>
+                <p>
+                  A role-based encrypted file portal with AES-256 protection
+                  and exact department and access control matching.
+                </p>
+                <a class="work-github" href="https://github.com/anim-michael-asante/SecureVault-Role-Based-Encrypted-File-Portal" target="_blank" rel="noopener noreferrer" aria-label="Open SecureVault on GitHub">
+                  <img class="github-logo" src="Tools/Github.png" alt="" /><span>View repository</span>
+                </a>
+              </div>
+            </article>
+            <article class="work-card">
+              <div class="work-card-image">
+                <img src="Projects/ShopNow.png" alt="Aerixis ShopNow digital commerce project" width="640" height="400" loading="lazy" />
+                <span class="work-card-number">04</span>
+              </div>
+              <div class="work-card-content">
+                <p class="work-card-type">Digital Commerce</p>
+                <h2>ShopNow</h2>
+                <p>
+                  An end-to-end commerce platform with atomic ordering, staff
+                  operations, analytics, and defense-in-depth security.
+                </p>
+                <a class="work-github" href="https://github.com/anim-michael-asante/Aerixis-ShopNow" target="_blank" rel="noopener noreferrer" aria-label="Open ShopNow on GitHub">
+                  <img class="github-logo" src="Tools/Github.png" alt="" /><span>View repository</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="work-marquee-note">Hover to pause · Click the GitHub logo to explore</p>
+      </section>
+
+      <section class="contact-hero" id="contact-section" aria-labelledby="contactTitle">
+        <div class="contact-hero-copy">
+          <p class="contact-kicker"><span></span>Let's connect</p>
+          <h1 id="contactTitle">Have something<br /><em>worth building?</em></h1>
+          <p>
+            Tell me what you are working on, what is getting in the way, or
+            where you want to go next. I would love to hear about it.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-links-section" aria-labelledby="contactLinksTitle">
+        <div class="contact-links-heading">
+          <p class="contact-kicker"><span></span>Find me here</p>
+          <h2 id="contactLinksTitle">Choose your<br /><em>best route.</em></h2>
+        </div>
+        <div class="contact-links">
+          <a class="contact-link-card" href="mailto:animmichaelasante@gmail.com">
+            <span class="contact-link-icon"><i data-lucide="mail"></i></span>
+            <span><small>Email</small><strong>animmichaelasante@gmail.com</strong></span>
+            <i class="contact-link-arrow" data-lucide="arrow-up-right"></i>
+          </a>
+          <a class="contact-link-card" href="https://www.linkedin.com/in/anim-michael-asante/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-icon contact-link-mark">in</span>
+            <span><small>LinkedIn</small><strong>Connect professionally</strong></span>
+            <i class="contact-link-arrow" data-lucide="arrow-up-right"></i>
+          </a>
+          <a class="contact-link-card" href="https://github.com/anim-michael-asante" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-icon contact-link-mark">GH</span>
+            <span><small>GitHub</small><strong>Explore my code</strong></span>
+            <i class="contact-link-arrow" data-lucide="arrow-up-right"></i>
+          </a>
+          <a class="contact-link-card" href="https://wa.me/233541881026" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-icon"><i data-lucide="message-circle"></i></span>
+            <span><small>WhatsApp</small><strong>Send a quick message</strong></span>
+            <i class="contact-link-arrow" data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-banner" aria-labelledby="contactBannerTitle">
+        <p class="contact-kicker"><span></span>Good work starts with a conversation</p>
+        <h2 id="contactBannerTitle">Let's build something<br /><em>that holds up.</em></h2>
+        <a class="btn contact-banner-button" href="mailto:animmichaelasante@gmail.com">
+          Email me directly <i data-lucide="arrow-up-right"></i>
+        </a>
+      </section>
+
+      <section class="faq-intro" id="faq-section" aria-labelledby="faqTitle">
+        <p class="faq-kicker"><span></span>Common questions</p>
+        <h1 id="faqTitle">Clear answers<br /><em>before we build.</em></h1>
+        <p>
+          A few things people usually want to know before starting a
+          development or application security project.
+        </p>
+      </section>
+
+      <section class="faq-list-section" aria-labelledby="faqListTitle">
+        <div class="faq-list-wrap">
+          <div class="faq-list-heading">
+            <p class="faq-kicker"><span></span>FAQ</p>
+            <h2 id="faqListTitle">The practical stuff.</h2>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>What kind of projects do you work on?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>I work on full-stack websites, web applications, progressive web apps, redesigns, and application security projects for teams that want dependable software.</p>
+            </details>
+            <details>
+              <summary>Can you help with both development and security?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>Yes. I can build the product, review an existing application, test attack paths, or combine development and security into one delivery process.</p>
+            </details>
+            <details>
+              <summary>What does an application security review include?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>The scope can cover authentication, authorization, input handling, APIs, file uploads, business logic, configuration, and deployment risks. You receive clear findings with practical remediation steps.</p>
+            </details>
+            <details>
+              <summary>How long does a project usually take?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>It depends on the scope and starting point. A focused review may take a few days, while a new product is planned in milestones so progress stays visible from the beginning.</p>
+            </details>
+            <details>
+              <summary>What happens after I send an inquiry?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>We start with a short conversation about your goals, users, timeline, and risks. I then recommend a focused next step with a clear scope and delivery path.</p>
+            </details>
+            <details>
+              <summary>Do you work with existing teams and codebases?<span class="faq-icon" aria-hidden="true"></span></summary>
+              <p>Absolutely. I can join an existing workflow, improve a specific part of the product, or provide a security-focused second set of eyes without disrupting the team.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-cta" aria-labelledby="faqCtaTitle">
+        <p class="faq-kicker"><span></span>Still have a question?</p>
+        <h2 id="faqCtaTitle">Let's make it<br /><em>concrete.</em></h2>
+        <a class="btn btn-pill-dark" href="Contact.html">Start a conversation</a>
+      </section>
     </main>
 
     <!-- Contact Modal ("Let's talk" Action) -->
@@ -650,6 +836,12 @@
             Full-stack engineering and application security for ambitious teams
             that need clarity, momentum, and resilient software.
           </p>
+          <div class="footer-socials" aria-label="Social links">
+            <a class="footer-social-link" href="mailto:animmichaelasante@gmail.com" aria-label="Email Michael"><i data-lucide="mail"></i></a>
+            <a class="footer-social-link" href="https://www.linkedin.com/in/anim-michael-asante/" target="_blank" rel="noopener noreferrer" aria-label="Open Michael's LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a class="footer-social-link" href="https://github.com/anim-michael-asante" target="_blank" rel="noopener noreferrer" aria-label="Open Michael's GitHub"><i data-lucide="github"></i></a>
+            <a class="footer-social-link" href="https://wa.me/233541881026" target="_blank" rel="noopener noreferrer" aria-label="Message Michael on WhatsApp"><i data-lucide="message-circle"></i></a>
+          </div>
         </div>
         <nav class="footer-links" aria-label="Footer navigation">
           <div>

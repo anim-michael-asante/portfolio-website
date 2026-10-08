@@ -65,3 +65,12 @@ Full premium About page with warm amber/peach palette (hsl(31, 91%, 73%)).
 - `about.js` — About page scroll-reveal animations, counter animations, and mobile menu re-binding.
 - `documentation.md` — Project specification and architecture.
 - `README.md` — Deployment and project summary.
+
+## Home Page Sections
+- Home now includes the exact Work, Contact, and FAQ section markup used by their standalone pages.
+- Home loads `work.css`, `contact.css`, and `faq.css` for visual parity.
+- The standalone `Work.html`, `Contact.html`, and `FAQ.html` pages remain unchanged.
+
+## Footer Social Links
+- Every public HTML page footer includes clickable Email, LinkedIn, GitHub, and WhatsApp icons.
+- External social links open in a new tab with `noopener noreferrer`; email opens the configured mail client.
