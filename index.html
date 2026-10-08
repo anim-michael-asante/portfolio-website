@@ -116,6 +116,7 @@
     <link rel="stylesheet" href="work.css" />
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="faq.css" />
+    <link rel="stylesheet" href="about.css" />
 
     <!-- Lucide Icons via CDN -->
     <script src="https://unpkg.com/lucide@0.468.0" defer></script>
@@ -150,7 +151,7 @@
               <a href="#hero" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a href="About.html" class="nav-link">About</a>
+              <a href="#about-section" class="nav-link">About</a>
             </li>
             <li class="nav-item">
               <a href="#work-section" class="nav-link">Work</a>
@@ -189,7 +190,7 @@
         <nav class="mobile-nav" aria-label="Mobile Navigation">
           <ul class="mobile-nav-list">
             <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
-            <li><a href="About.html" class="mobile-nav-link">About</a></li>
+            <li><a href="#about-section" class="mobile-nav-link">About</a></li>
             <li><a href="#work-section" class="mobile-nav-link">Work</a></li>
             <li><a href="#faq-section" class="mobile-nav-link">FAQ</a></li>
             <li><a href="#contact-section" class="mobile-nav-link">Contact</a></li>
@@ -510,6 +511,168 @@
           </div>
         </div>
       </section>
+
+      <div class="abt-main" id="about-section">
+        <section class="abt-approach" id="aboutApproach" aria-labelledby="approachTitle">
+          <div class="abt-approach-inner">
+            <div class="abt-approach-layout">
+              <div class="abt-approach-copy" data-abt-reveal>
+                <p class="abt-kicker"><span class="abt-kicker-dash"></span>How I work</p>
+                <h2 class="abt-section-title" id="approachTitle">
+                  Build secure<br />
+                  software that<br />
+                  <span class="abt-text-warm">holds up.</span>
+                </h2>
+                <p class="abt-approach-lead">
+                  I look at every project from two perspectives: how it should
+                  work and how it could be attacked.
+                </p>
+              </div>
+
+              <aside class="abt-approach-card" data-abt-reveal aria-label="How I work quotes">
+                <span class="abt-approach-quote" aria-hidden="true">“</span>
+                <div class="abt-quote-slides" aria-live="polite">
+                  <p class="abt-quote-slide is-active" data-quote-slide>
+                    Security is built into the process from the start, shaping
+                    architecture, API design, input validation, and deployment
+                    decisions before problems reach production.
+                  </p>
+                  <p class="abt-quote-slide" data-quote-slide>
+                    I build with clarity, test with intent, and ship software that
+                    stays dependable as it grows.
+                  </p>
+                  <p class="abt-quote-slide" data-quote-slide>
+                    Strong software is not only useful. It is resilient,
+                    maintainable, and ready for real-world pressure.
+                  </p>
+                </div>
+                <div class="abt-quote-controls">
+                  <button class="abt-quote-button" type="button" data-quote-prev aria-label="Previous quote">
+                    <i data-lucide="arrow-left"></i>
+                  </button>
+                  <span class="abt-quote-progress" aria-hidden="true">
+                    <span class="is-active" data-quote-dot></span>
+                    <span data-quote-dot></span>
+                    <span data-quote-dot></span>
+                  </span>
+                  <button class="abt-quote-button" type="button" data-quote-next aria-label="Next quote">
+                    <i data-lucide="arrow-right"></i>
+                  </button>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="abt-certs" id="aboutCerts" aria-labelledby="certsTitle">
+          <div class="abt-certs-inner">
+            <div class="abt-certs-header" data-abt-reveal>
+              <p class="abt-kicker abt-kicker--light">
+                <span class="abt-kicker-dash abt-kicker-dash--light"></span>Credentials
+              </p>
+              <h2 class="abt-section-title abt-section-title--light" id="certsTitle">
+                Certified across<br />
+                <span class="abt-text-warm">industry leaders.</span>
+              </h2>
+            </div>
+
+            <div class="abt-certs-grid">
+              <article class="abt-cert-card" data-abt-reveal>
+                <div class="abt-cert-logo"><i data-lucide="shield-check"></i></div>
+                <div class="abt-cert-body">
+                  <h3>Google Cybersecurity Professional</h3>
+                  <p>Google Career Certificates</p>
+                </div>
+                <span class="abt-cert-badge">Professional Certificate</span>
+              </article>
+              <article class="abt-cert-card" data-abt-reveal>
+                <div class="abt-cert-logo"><i data-lucide="git-branch"></i></div>
+                <div class="abt-cert-body">
+                  <h3>GitHub Certified</h3>
+                  <p>GitHub</p>
+                </div>
+                <span class="abt-cert-badge">Certified</span>
+              </article>
+              <article class="abt-cert-card" data-abt-reveal>
+                <div class="abt-cert-logo"><i data-lucide="network"></i></div>
+                <div class="abt-cert-body">
+                  <h3>Cisco Certified</h3>
+                  <p>Cisco Networking Academy</p>
+                </div>
+                <span class="abt-cert-badge">Certified</span>
+              </article>
+              <article class="abt-cert-card" data-abt-reveal>
+                <div class="abt-cert-logo"><i data-lucide="brain"></i></div>
+                <div class="abt-cert-body">
+                  <h3>Anthropic Certified</h3>
+                  <p>Anthropic</p>
+                </div>
+                <span class="abt-cert-badge">Certified</span>
+              </article>
+              <article class="abt-cert-card" data-abt-reveal>
+                <div class="abt-cert-logo"><i data-lucide="monitor"></i></div>
+                <div class="abt-cert-body">
+                  <h3>Microsoft Certified</h3>
+                  <p>Microsoft</p>
+                </div>
+                <span class="abt-cert-badge">Certified</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="abt-journey" id="aboutJourney" aria-labelledby="journeyTitle">
+          <div class="abt-journey-inner">
+            <div class="abt-journey-header" data-abt-reveal>
+              <p class="abt-kicker"><span class="abt-kicker-dash"></span>Journey</p>
+              <h2 class="abt-section-title" id="journeyTitle">
+                How I got<br />
+                <span class="abt-text-warm">here.</span>
+              </h2>
+            </div>
+
+            <div class="abt-timeline">
+              <div class="abt-timeline-line" aria-hidden="true"></div>
+              <article class="abt-timeline-item" data-abt-reveal>
+                <div class="abt-timeline-marker" aria-hidden="true"><span class="abt-timeline-dot"></span></div>
+                <div class="abt-timeline-content">
+                  <span class="abt-timeline-tag">Present</span>
+                  <h3>Full-Stack Engineer &amp; AppSec Freelancer</h3>
+                  <p>
+                    Building secure web applications for ambitious teams and
+                    startups. Combining development and security into a single,
+                    focused delivery workflow.
+                  </p>
+                </div>
+              </article>
+              <article class="abt-timeline-item" data-abt-reveal>
+                <div class="abt-timeline-marker" aria-hidden="true"><span class="abt-timeline-dot"></span></div>
+                <div class="abt-timeline-content">
+                  <span class="abt-timeline-tag">Certifications</span>
+                  <h3>Professional Development</h3>
+                  <p>
+                    Earned certifications from Google (Cybersecurity), GitHub,
+                    Cisco, Anthropic, and Microsoft, building a foundation across
+                    security, networking, AI, and cloud platforms.
+                  </p>
+                </div>
+              </article>
+              <article class="abt-timeline-item" data-abt-reveal>
+                <div class="abt-timeline-marker" aria-hidden="true"><span class="abt-timeline-dot"></span></div>
+                <div class="abt-timeline-content">
+                  <span class="abt-timeline-tag">Foundation</span>
+                  <h3>Self-taught &amp; Curious</h3>
+                  <p>
+                    Built my foundation through hands-on projects, continuous
+                    learning, and a deep interest in writing secure, reliable
+                    software with Python and JavaScript.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <section class="work-intro" id="work-section" aria-labelledby="workTitle">
         <p class="work-kicker"><span></span>Selected work</p>
@@ -866,6 +1029,7 @@
     <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
     <!-- Application Script -->
+    <script src="about.js" defer></script>
     <script src="app.js" defer></script>
   </body>
 </html>

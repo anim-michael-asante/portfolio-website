@@ -70,6 +70,7 @@ Full premium About page with warm amber/peach palette (hsl(31, 91%, 73%)).
 - Home now includes the exact Work, Contact, and FAQ section markup used by their standalone pages.
 - Home loads `work.css`, `contact.css`, and `faq.css` for visual parity.
 - The standalone `Work.html`, `Contact.html`, and `FAQ.html` pages remain unchanged.
+- Home also includes the exact About page approach, certifications, and journey sections, with the existing About styling and quote interaction.
 
 ## Footer Social Links
 - Every public HTML page footer includes clickable Email, LinkedIn, GitHub, and WhatsApp icons.
