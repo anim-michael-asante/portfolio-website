@@ -15,6 +15,7 @@ server, database, or runtime dependency.
 - [Responsive mockups](#responsive-mockups)
 - [Live site](#live-site)
 - [Pages](#pages)
+- [Homepage sections](#homepage-sections)
 - [Featured work](#featured-work)
 - [Tech stack](#tech-stack)
 - [Site features](#site-features)
@@ -92,12 +93,32 @@ responsive layouts.
 
 | Page | Purpose |
 | --- | --- |
-| `index.html` | Homepage with positioning, services, tools, security focus, and navigation |
+| `index.html` | Homepage with positioning, services, tools, security focus, embedded page sections, and navigation |
 | `About.html` | Background, working approach, timeline, and application security perspective |
 | `Work.html` | Selected projects with descriptions, images, and GitHub repository links |
 | `FAQ.html` | Answers about services, collaboration, timelines, and existing codebases |
 | `Contact.html` | CTA-style contact page with email, LinkedIn, GitHub, and WhatsApp |
 | `404.html` | Branded GitHub Pages not-found page |
+
+The navbar links follow the canonical page URLs listed in `sitemap.xml`, so
+selecting About, Work, FAQ, or Contact opens its dedicated page. The homepage
+also retains the corresponding content sections for visitors who continue
+scrolling through the home experience.
+
+## Homepage sections
+
+In addition to the hero, tools, services, and security sections, `index.html`
+includes the same section content used by the dedicated pages:
+
+- **About:** working approach, certifications, quote carousel, and journey
+  timeline
+- **Work:** selected project cards with GitHub repository links
+- **Contact:** email, LinkedIn, GitHub, and WhatsApp contact routes
+- **FAQ:** native accessible accordions and a conversation CTA
+
+The dedicated pages remain available for direct navigation, search indexing,
+sharing, and page-specific browsing. Their source files are not replaced by
+the homepage sections.
 
 ## Featured work
 
@@ -140,10 +161,13 @@ responsive layouts.
 - Responsive desktop and mobile navigation
 - Mobile hamburger menu with an in-menu “Let's talk” CTA
 - Dedicated About, Work, FAQ, and Contact pages
+- Homepage sections mirroring the dedicated About, Work, FAQ, and Contact pages
 - Marquee-style Work project cards with repository links
 - Accessible native FAQ accordions using `<details>` and `<summary>`
 - Contact page with direct email, LinkedIn, GitHub, and WhatsApp links
-- Shared CTA footer across the main pages
+- Shared CTA footer with clickable Email, LinkedIn, GitHub, and WhatsApp icons
+- Footer social links use accessible labels and safe `noopener noreferrer`
+  attributes for external destinations
 - Keyboard-visible focus states and semantic landmarks
 - Reduced-motion support for animations and transitions
 - Lazy-loaded below-the-fold images with explicit dimensions where applicable
@@ -208,7 +232,7 @@ indexing:
 
 - `robots.txt` allows crawling and points to the sitemap
 - `sitemap.xml` lists the canonical homepage and dedicated pages
-- `llm.txt` provides a concise, machine-readable site and project summary
+- `llms.txt` provides a concise, machine-readable site and project summary
 - Canonical URLs are defined on the homepage and dedicated pages
 - The homepage includes Open Graph and Twitter/X sharing metadata
 - Page-specific titles and meta descriptions are included throughout the site
@@ -248,7 +272,7 @@ https://anim-michael-asante.github.io/portfolio-website/sitemap.xml
 ├── site.webmanifest           # Web app manifest
 ├── robots.txt                 # Crawler rules
 ├── sitemap.xml                # Canonical URL list
-├── llm.txt                    # Machine-readable site summary
+├── llms.txt                   # Machine-readable site summary
 └── documentation.md           # Design and implementation notes
 ```
 
@@ -294,12 +318,15 @@ git diff --check
 Then verify:
 
 - Each page loads through the local HTTP server.
-- Navigation links open the intended dedicated page.
+- Homepage navbar links open the canonical dedicated page from `sitemap.xml`.
+- Dedicated-page navigation returns to the intended page or homepage.
 - The mobile hamburger opens and closes correctly.
 - The mobile “Let's talk” link appears inside the hamburger menu.
 - Work repository links open the correct GitHub repositories.
+- Homepage About quote controls switch between quotes.
 - FAQ entries open and close with keyboard and pointer input.
 - Contact links use the correct email and social URLs.
+- Footer social icons appear and remain keyboard accessible on every page.
 - `robots.txt` points to the live sitemap.
 - `sitemap.xml` contains only canonical indexable pages.
 - Images have meaningful `alt` text and below-the-fold images are lazy-loaded.
