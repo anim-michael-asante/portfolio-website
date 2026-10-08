@@ -9,6 +9,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburgerIcon = document.getElementById('hamburgerIcon');
   const closeMenuIcon = document.getElementById('closeMenuIcon');
 
+  const marqueeRow = document.querySelector('.work-marquee-row');
+  let marqueeResumeTimer;
+
+  // Let touch, pointer, and trackpad scrolling take over the moving strip.
+  marqueeRow?.addEventListener('scroll', () => {
+    marqueeRow.classList.add('is-manually-scrolling');
+    window.clearTimeout(marqueeResumeTimer);
+    marqueeResumeTimer = window.setTimeout(() => {
+      marqueeRow.classList.remove('is-manually-scrolling');
+    }, 1400);
+  }, { passive: true });
+
+  marqueeRow?.addEventListener('wheel', (event) => {
+    if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+      marqueeRow.scrollLeft += event.deltaY;
+    }
+  }, { passive: true });
+
   const toggleMobileMenu = (forceState) => {
     if (!mobileDrawer) return;
     const isOpen = mobileDrawer.classList.contains('open');

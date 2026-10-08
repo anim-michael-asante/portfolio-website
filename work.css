@@ -63,8 +63,18 @@
 }
 
 .work-marquee-row {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) transparent;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.work-marquee-row:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
 }
 
 .work-track {
@@ -76,6 +86,10 @@
 }
 
 .work-marquee-row:hover .work-track {
+  animation-play-state: paused;
+}
+
+.work-marquee-row.is-manually-scrolling .work-track {
   animation-play-state: paused;
 }
 
