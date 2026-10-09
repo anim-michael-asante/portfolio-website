@@ -75,3 +75,6 @@ Full premium About page with warm amber/peach palette (hsl(31, 91%, 73%)).
 ## Footer Social Links
 - Every public HTML page footer includes clickable Email, LinkedIn, GitHub, and WhatsApp icons.
 - External social links open in a new tab with `noopener noreferrer`; email opens the configured mail client.
+
+## Reusable Design Skills
+- `.github/skills/apple-design/SKILL.md` captures the project's Apple-inspired guidance for fluid interaction, motion, materials, typography, and accessibility.
